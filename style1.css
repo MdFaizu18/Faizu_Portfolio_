@@ -1,0 +1,231 @@
+/* this common for all whole body content  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    /* --backgrnd : rgb(14, 11, 43); */
+    --backgrnd:rgb(10, 8, 28);
+    --orange:rgb(255,105,10);
+    --orangebtn:rgb(255, 48, 25);
+    --footer:#000000dd;
+}
+
+body {
+    background-color: var(--backgrnd);
+}
+
+#header {
+    color: white;
+    height: 780px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80px;
+    /* background-color: #ddd; */
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    margin: 0 10px;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: .5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+.left {
+    font-size: 2.1em;
+    color: #e6fbff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.Md {
+    color: red;
+}
+
+.dot {
+    color: red;
+    font-size: 60px;
+}
+
+.right {
+    margin-top: 25px;
+    /* font-size: 20px; */
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    height: 700px;
+}
+
+.leftsec {
+    justify-self: start;
+    font-size: 2.8em;
+    margin-left: 10%;
+    margin-top: 20px;
+    line-height: 120%;
+
+}
+
+#myself {
+    color: rgb(255, 77, 0);
+    font-weight: 800;
+    font-size: 1.45em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+/* for animated typing text content  */
+
+.animated-text {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Full Stack Developer";
+    color: #bfff50da;
+    /*#bfff50*/
+    animation: words 20s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: var(--backgrnd);
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "Software Engineer";
+    }
+
+    21%,
+    40% {
+        content: "Web Designer";
+    }
+
+    41%,
+    60% {
+        content: "Full Stack Developer";
+    }
+
+    61%,
+    80% {
+        content: "Graphic Editor";
+    }
+
+    81%,
+    100% {
+        content: "Gamer";
+    }
+}
+
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+
+/* for get in touch button  */
+
+.btn1getintouch {
+    text-decoration: none;
+    background-color: rgb(8, 7, 18);
+
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--orangebtn);
+    color: white;
+    margin-left: 25%;
+    box-shadow: 0px 0px 20px rgb(245, 80, 30);
+    transition: all .5s;
+    /* margin-top: 10%; */
+}
+
+.btn1getintouch:hover {
+    background-color: rgb(255, 48, 25);
+    /*rgb(255, 48, 25)*/
+    box-shadow: 0px 0px 30px rgb(245, 80, 30);
+    transform: scale(1.7)
+}

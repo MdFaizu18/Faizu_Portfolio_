@@ -1,0 +1,113 @@
+.container2 {
+    padding: 80px 0;
+    color: #ffffff;
+    background-color: var(--backgrnd);
+}
+.secondlayer{
+    padding: 10px 4%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+.myimg {
+    flex-basis: 30%;
+
+
+    /* width: 400px;
+    border: 1px solid rgb(255, 104, 10);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 104, 10, 0.874);
+    transition: all .2s; */
+
+
+}
+
+.myimg img {
+    width: 95%;
+    height: 480px;
+    margin-top: 10%;
+    border: 1px solid rgb(255, 104, 10);
+    border-radius: 20px;
+    margin-left: 5%;
+    box-shadow: 0px 0px 25px rgba(255, 104, 10);
+    transition: all .2s;
+}
+
+.myimg img:hover {
+    transform: scale(.95);
+    box-shadow: 0px 0px 55px rgb(255, 105, 10);
+
+}
+
+/* -------- right side content about me ------------ */
+.aboutme {
+    flex-basis: 50%;
+    /* margin-top: 5%; */
+}
+
+
+/* about me title  */
+.abt-title {
+    padding: 10px 0;
+    margin-top: 1%;
+    font-size: 60px;
+    font-weight: 600;
+    color: aliceblue;
+    text-shadow: 0 0 10px var(--orangebtn);
+}
+
+.subtab-titles {
+    display: flex;
+    margin: 40px 0 40px;
+}
+
+.subtab-links {
+
+margin-right: 50px;
+font-weight: 500;
+cursor: pointer;
+font-size: 20px;
+position: relative;
+
+
+}
+
+.subtab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: var(--orangebtn);
+    left:0;
+    bottom:-5px;
+    transition: .5s;
+}
+
+
+.subtab-links.active-link::after{
+    width: 50%;
+}
+
+.subtab-contents ul li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.subtab-contents ul li span{
+    color:rgb(255, 104, 10);
+    font-size: 15px;
+}
+
+.subtab-contents{
+    display: none;
+}
+
+.subtab-contents.active-tab{
+    display: block;
+}

@@ -1,0 +1,197 @@
+/* css style sheet for the media query for small screen */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    nav ul{
+        display: none;
+    }
+    /* nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: var(--orange);
+        position: fixed;
+        top:0;
+        right: 0;
+        width: 180px;
+        height: 80vh;
+        padding-top: 50px;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px 15px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top:25px;
+        left:25px;
+        cursor: pointer;
+
+    } */
+    
+    .container1{
+       display: flex;
+       flex-direction: column-reverse;
+       gap:5%;
+    }
+    .container0{
+        height: 150px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .container1.rightsec{
+        margin-top: 50px;
+    }
+    .rightsec img{
+            /* margin-top: ; */
+        
+            height: 400px;
+            width: 400px;        
+    }
+    .whoami{
+        font-size: 30px;
+        margin-left: -5%;
+    }
+
+    .animated-text {
+        margin-top: 15px;
+        margin-bottom: 40px;
+        font-size: 30px;
+        font-weight: 600;
+        min-width: 270px;
+        margin-left: -10px;
+    }
+    
+    
+    
+    .animated-text span::after {
+    
+        height: 115%;
+       
+    }
+    .myimg {
+
+        flex-basis: 80%;
+       
+    }
+    .myimg img {
+        width: 95%;
+        height: 280px;
+        margin-top: 30%;
+        margin-left: 2%;
+       
+    }
+    .aboutme.abt-title{
+        margin-left: 10%;
+    }
+   
+    .abt-title {
+        padding: 10px 10px;
+        margin-top: 1%;
+        margin-left: 10%;
+        font-size: 40px;
+       
+    }
+    .abtmepara{
+        padding: 0px 50px;
+        text-align: justify;
+        font-size: 18px;
+    }
+   
+    .subtab-titles {
+        display: flex;
+        margin-left: 40px;
+      
+  
+    }
+    
+  
+    
+    .subtab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        background-color: var(--orangebtn);
+        left:0;
+        bottom:-5px;
+        transition: .5s;
+    }
+    
+    
+    .subtab-links.active-link::after{
+        width: 50%;
+    }
+    
+    .subtab-contents ul li{
+        list-style-type: none;
+        margin: 10px 50px;
+    }
+    
+    .subtab-contents ul li span{
+        color:rgb(255, 104, 10);
+        font-size: 15px;
+    }
+    
+    .subtab-contents{
+        display: none;
+    }
+    
+    .subtab-contents.active-tab{
+        display: block;
+    }
+    .container3{
+        margin-top: -10%;
+    }
+    .container4{
+        margin-top: 10%;
+    }
+    
+    .work-lists{
+      display: flex;
+      flex-direction: column;
+ 
+    }
+    .seemorebtn{
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    .container5{
+       margin-top: 20%;
+    }
+    .row2{
+       display: flex;
+       flex-direction:column;
+    }
+    .downcv{
+        margin-bottom: 20px;
+     
+    }
+    .downcv2{
+        margin-left:33%;
+    }
+   
+    .contacti{
+        color:var(--orange);
+        margin-right: 15px;
+        font-size: 25px;
+        display: inline-block;
+        
+    }
+    .social-icons{
+        margin-top: 30px;
+    
+    }
+
+   
+    
+    
+
+ 
+    
+}
